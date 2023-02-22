@@ -1,0 +1,30 @@
+CREAR UNA APP de Angular 
+
+1.- (Ingresar a la carpeta donde queramos que este alojado el proyecto de angular)
+1.- ng new >>gitsApp<<
+
+2.- (verificar si nuestra App esta creada con exito)
+2.- ng serve --open 
+
+3.- (Crear Modulos)
+3.- ng g m >>sharede<<
+
+4.-(Crear Componentes) (shared-> hace referencia a la carpeta donde queremos que se cree el modulo)
+4.-ng g c >>shared/sidebar<< --skip-tests 
+
+5.-(Exportar el SIDEBAR) (tendremos que exportarporque se utilizara en otros lados fuera de la Carpeta)
+5.-"exports: [SiderbarComponent] "
+
+6.-(Llamar al MODULO NUEVO)
+6.-enapp.module.ts -> SharedModule (Verificar que si se h aya importado )
+
+7.- Estructurar codigo 1.- Cortar la parte que queremos estrcturar (Sidebar)
+7.- app.componen.html a=> sidebar.component.html
+
+8.- (CREAR Servicios)(se coloca en q carpeta queremos el Servicio, la carpeta del SErvicio y el nombre del Servicio)
+8.-ng g s gifs/services/gifs --skip-tests 
+
+@ViewChild ->  devuelve el primer elemento que coincide con una directiva, un componente o un selector de referencia de plantillas concreto.
+ 
+
+CtbSNZMFPFIbWl1x5KQjtqPOHnE1ema5
