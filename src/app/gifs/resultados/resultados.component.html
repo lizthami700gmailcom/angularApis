@@ -1,0 +1,23 @@
+
+ <!--   <ul>
+        <li *ngFor="let gif of resultados">
+      {{ gif.name}}          
+        </li>
+    </ul>
+-->
+<div class="row">
+    <div *ngFor="let gif of resultados" class="col-md-4 col-sm-6">
+        <div class="card">
+            <img [src]="gif.image" [alt]="gif.name" class="card-img-top">  
+            <div class="card-body">
+                <a>
+                          {{ gif.name}} 
+                </a>
+                <p class="card-text">
+                   
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
